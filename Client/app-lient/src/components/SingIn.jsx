@@ -42,7 +42,7 @@ const SignIn = () => {
         }, 2000);
       } else {
         setTimeout(() => {
-          navigate("/admin");
+          navigate("/");
         }, 2000);
       }
     } catch (err) {

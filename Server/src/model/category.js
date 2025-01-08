@@ -10,6 +10,6 @@ const categorySchema = new Schema({
     timestamps: true
 });
 
-const Category = mongoose.model('Category', categorySchema); // Đảm bảo tên này là 'Category'
+const Category = mongoose.model('Category', categorySchema); 
 
 module.exports = Category;

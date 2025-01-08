@@ -7,5 +7,7 @@ const router = express.Router();
 router.post('/addComment', commentController.addComment);
 router.get('/getCommentsByProductId/:productId', commentController.getCommentsByProductId);
 router.get('/getAllComment', commentController.getAllComment);
+router.delete('/deleteComment/:id', commentController.deleteComment);
+
 
 module.exports = router;

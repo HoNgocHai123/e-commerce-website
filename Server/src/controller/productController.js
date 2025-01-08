@@ -8,7 +8,7 @@ const addProduct = async (req, res) => {
         let imageUrl = '';
         if (req.file) {
             const result = await cloudinary.uploader.upload(req.file.path);
-            imageUrl = result.secure_url; // Lấy đường dẫn ảnh sau khi upload lên Cloudinary
+            imageUrl = result.secure_url; 
         }
 
         const product = new Products({

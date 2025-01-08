@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <nav className=' bg-gray-900 text-white p-4 shadow-lg'>
       <div className='container mx-auto flex items-center space-x-14'>
-        <div className='text-2xl font-bold'>Nhóm 17</div>
+        
         <ul className='flex space-x-6'>
           <li>
             <Link 
