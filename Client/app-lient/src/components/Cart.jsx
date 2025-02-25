@@ -142,7 +142,98 @@ const Cart = () => {
 
           {/* Cột thứ hai: Để trống */}
           <div className="w-1/3">
-            {/* Nội dung tùy chỉnh cho cột này */}
+            <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-md">
+              <h2 className="text-xl font-bold mb-4">THÔNG TIN KHÁCH HÀNG</h2>
+
+              {/* Thông tin khách hàng */}
+              <div className="mb-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <label className="flex items-center">
+                    <input type="radio" name="gender" className="mr-2" /> Anh
+                  </label>
+                  <label className="flex items-center">
+                    <input type="radio" name="gender" className="mr-2" /> Chị
+                  </label>
+                </div>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block font-medium mb-2">Họ và tên *</label>
+                    <input
+                      type="text"
+                      className="w-full border border-gray-300 p-2 rounded-md"
+                      placeholder="Nhập họ và tên"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-medium mb-2">Số điện thoại *</label>
+                    <input
+                      type="text"
+                      className="w-full border border-gray-300 p-2 rounded-md"
+                      placeholder="Số điện thoại"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Hình thức giao hàng */}
+              <h2 className="text-xl font-bold mb-4">HÌNH THỨC GIAO HÀNG</h2>
+              <div className="mb-6">
+                <div className="flex items-center gap-4 mb-4">
+                  <label className="flex items-center">
+                    <input type="radio" name="delivery" className="mr-2" /> Giao hàng tận nơi
+                  </label>
+                  <label className="flex items-center">
+                    <input type="radio" name="delivery" className="mr-2" /> Nhận hàng tại cửa hàng
+                  </label>
+                </div>
+                <div className="grid grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label className="block font-medium mb-2">Tỉnh thành *</label>
+                    <select className="w-full border border-gray-300 p-2 rounded-md">
+                      <option>Hồ Chí Minh</option>
+                      <option>Hà Nội</option>
+                      <option>Đà Nẵng</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block font-medium mb-2">Quận huyện *</label>
+                    <select className="w-full border border-gray-300 p-2 rounded-md">
+                      <option>Chọn quận / huyện</option>
+                    </select>
+                  </div>
+                </div>
+                <div className="mb-4">
+                  <label className="block font-medium mb-2">Phường xã *</label>
+                  <select className="w-full border border-gray-300 p-2 rounded-md">
+                    <option>Chọn phường / xã</option>
+                  </select>
+                </div>
+                <div className="mb-4">
+                  <label className="block font-medium mb-2">Tên đường / số nhà</label>
+                  <input
+                    type="text"
+                    className="w-full border border-gray-300 p-2 rounded-md"
+                    placeholder="Nhập tên đường / số nhà"
+                  />
+                </div>
+                <div className="mb-4">
+                  <label className="block font-medium mb-2">Yêu cầu khác (nếu có)</label>
+                  <input
+                    type="text"
+                    className="w-full border border-gray-300 p-2 rounded-md"
+                    placeholder="Nhập yêu cầu"
+                  />
+                </div>
+                <div className="flex items-center gap-4">
+                  <label className="flex items-center">
+                    <input type="checkbox" className="mr-2" /> Gọi người khác nhận hàng (Nếu có)
+                  </label>
+                  <label className="flex items-center">
+                    <input type="checkbox" className="mr-2" /> Xuất hóa đơn công ty
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
